@@ -1,0 +1,56 @@
+.calculator {
+    background-color: grey;
+    height: 700px;
+    width: 500px;
+    display: flex;
+    flex-direction: column; /* Ensure that result and buttons are arranged vertically */
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.result {
+    width: 90%;
+    background-color: blue;
+    height: 10%;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+}
+
+.operation-buttons {
+    display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap onto the next row */
+    justify-content: space-between; /* Evenly space the buttons across the row */
+    width: 90%;
+    height: 80%; /* Adjust the height for the button grid */
+}
+
+.operation-buttons div {
+    background-color: lightgrey;
+    text-align: center;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    width: calc(20% - 10px); /* 20% width for each button, with margin adjustment */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 5px; /* Add spacing between buttons */
+}
+
+/* Operator buttons can have a different background color */
+.operation-buttons div:nth-last-child(-n+5) {
+    background-color: orange; /* Different color for operator buttons */
+    color: white;
+}
