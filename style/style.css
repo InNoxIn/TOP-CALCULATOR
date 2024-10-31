@@ -3,7 +3,7 @@
     height: 700px;
     width: 500px;
     display: flex;
-    flex-direction: column; /* Ensure that result and buttons are arranged vertically */
+    flex-direction: column;
     align-items: center;
     padding: 20px;
 }
@@ -28,10 +28,10 @@
 
 .operation-buttons {
     display: flex;
-    flex-wrap: wrap; /* Allow buttons to wrap onto the next row */
-    justify-content: space-between; /* Evenly space the buttons across the row */
+    flex-wrap: wrap; 
+    justify-content: space-between; 
     width: 90%;
-    height: 80%; /* Adjust the height for the button grid */
+    height: 80%; 
 }
 
 .operation-buttons div {
@@ -48,6 +48,10 @@
     align-items: center;
     margin: 10px 5px; /* Add spacing between buttons */
 }
+
+#clear {
+    width: calc(100% - 10px); /* Take up 40% width, which is double the normal button width */
+    background-color: red; /* Optional: add a distinct color for Clear */
 
 /* Operator buttons can have a different background color */
 .operation-buttons div:nth-last-child(-n+5) {
